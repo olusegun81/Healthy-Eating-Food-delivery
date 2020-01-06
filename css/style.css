@@ -1,0 +1,310 @@
+* {  margin:0 ;
+    padding:0 ;
+    box-sizing:border-box;
+
+}
+
+html{
+    background-color:#fff ;
+    color: #555;
+    font-family: "Lato", Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+}
+
+.clearfix{zoom: 1}
+.clearfix:after{
+    content:'.' ;
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+
+}
+
+.row{
+    max-width:1140px ;
+    margin: 0 auto;
+}
+/* HEADER */
+header{
+    background-image:linear-gradient( rgba(0, 0, 0, 0.39),rgba(0, 0, 0, 0.87)), url(../img/food-top.jpg);
+    height:100vh ;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+h1{
+    margin: 0;
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing:1px ;
+    word-spacing: 4px;
+    
+}
+
+.food-box{
+    position: absolute;
+    width: 1140px;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    
+}
+
+
+#logo{
+    float: left;
+    width:auto;
+}
+
+
+.main-nav{
+    float: right;
+    list-style: none;
+    margin-top: 40px;
+    padding: 10px;
+}
+
+.main-nav li{
+    display: inline-block;
+    margin-left: 40px;
+    
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border: 2px solid transparent;
+    transition: border-bottom 0.2s;
+    
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border: 2px solid #cf2c17;
+}
+
+/* BUTTONS */
+
+.btn:link,
+.btn:visited  {
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 200px;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+
+}
+
+.btn-full:link,
+.btn-full:visited  {
+    background-color: #e67e22;
+    border:1px solid #e67e22;
+    color: #fff;
+    margin-right: 15px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited{
+    border:1px solid #e67e22;
+    color: #e67e22;
+
+}
+
+.btn:hover,
+.btn:active{
+    background-color: #cf2c17;
+    color: #fff;
+}
+/* BODY SECTION */
+
+section{
+    padding: 70px 0;
+}
+
+h2{
+    font-size: 180%;
+    text-align: center;
+    margin-bottom:30px ;
+    word-spacing: 2px;
+    text-transform: uppercase;
+    letter-spacing:1px ;
+    
+    
+}
+
+h2:after{
+    display:block;
+    height: 2px;
+    background-color: #e67e22;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 30px;
+    letter-spacing:1px ;
+}
+
+.long-copy{
+    line-height:145% ;
+    width: 70%;
+    margin-left: 15%;
+    
+}
+
+.box{
+    padding: 1%;
+}
+
+.box p{
+    font-size: 90%;
+    line-height: 145%;
+}
+
+h3{
+    font-size: 110%;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.section-features .long-copy{
+    margin-bottom: 30px;
+
+}
+
+/* ICONS */
+
+
+
+
+/* MEALS */
+.section-meals{
+    padding: 0;
+
+}
+
+.mealShowcase{
+    list-style: none;
+    width: 100%;
+
+}
+.mealShowcase li{
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.mealsphoto{
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.mealsphoto img{
+    width: 100%;
+    opacity: 0.7;
+    height: auto;
+    transform: scale(1.15);
+    transition: transform 0.5s;
+}
+
+.mealsphoto img:hover{
+    transform: scale(1.03);
+    opacity: 1;
+}
+
+/* SECTION STEPS */
+
+.steps{
+    background-color:#DEDEDE;
+}
+
+.steps h2{
+    text-align: center;
+}
+
+
+.step-box:first-child{
+    text-align: left;
+    padding-right: 5%;
+    margin-top: 30px;
+}
+
+.step-box:last-child{
+    padding-left: 3%;
+    margin-top: 70px;
+}
+
+.steps p{
+    margin-bottom: 30px;
+    text-align: left;
+    /* padding-left: 20px; */
+    
+}
+
+.work-steps{
+    background-color: #e67e22;
+    border: 2px solid #e67e22;
+    border-radius: 50%;
+    height: 50px;
+    /* display: inline-block; */
+    width: 50px;
+    padding: 5px;
+    float:left;
+    text-align: center;
+    font-size: 150%;
+    margin-right: 25px;
+    color: #fff;
+    
+}
+
+.btn-app img{
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
+
+}
+
+.btn-app:link,
+.btn-app:visited{
+    border: 0;
+}
+
+/* SECTION CITIES */
+
+.cities-box img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+
+}
+
+.locate{
+    margin-bottom: 15px;
+}
+
+a:link,
+a:visited{
+    color: #e67e22;
+    text-decoration: none;
+    border-bottom:1px solid #e67e22;
+    transition: border-bottom 0.2s, color 0.2s;
+    
+
+}
+
+a:hover,
+a:active{
+    color: #555;
+    text-decoration: none;
+    border-bottom:1px solid transparent;
+    
+}
